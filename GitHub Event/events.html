@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Git Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <span>G</span> Git Club
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html" class="active">Events</a>
+        <a href="past-events.html">Past Events</a>
+    </nav>
+
+    <a href="events.html" class="nav-btn">Explore Events</a>
+</header>
+
+
+<main>
+
+<section class="page-heading">
+    <p class="tag">GIT CLUB EVENT HUB</p>
+    <h1>Upcoming Events</h1>
+    <p>Find workshops, hackathons, competitions and community events.</p>
+</section>
+
+
+<section class="event-tools">
+
+    <input
+        type="text"
+        id="search"
+        placeholder="🔎 Search events..."
+    >
+
+    <button class="filter active-filter" onclick="filterEvents('all')">
+        All
+    </button>
+
+    <button class="filter" onclick="filterEvents('Workshop')">
+        Workshops
+    </button>
+
+    <button class="filter" onclick="filterEvents('Hackathon')">
+        Hackathons
+    </button>
+
+    <button class="filter" onclick="filterEvents('Competition')">
+        Competitions
+    </button>
+
+    <button class="filter" onclick="filterEvents('Community')">
+        Community
+    </button>
+
+</section>
+
+
+<section id="eventsContainer" class="event-grid"></section>
+
+</main>
+
+
+<footer>
+    <div>
+        <h3>Git Club</h3>
+        <p>Build • Learn • Collaborate</p>
+    </div>
+
+    <p>© 2026 Git Club CHARUSAT</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
